@@ -79,7 +79,7 @@ Attempt 1:
 3. Increasing no. of neurons to 100, 60, and 30 respectively
 4. Increasing no. of epochs to 150
 
-I removed outliers with the intention to reduce noise that might be misdirecting my model. I chose 3 as the threshold as all the values are scaled to be a z_score. A z-score of 3 means that the data point is three standard deviations away from the mean. This threshold is often used in statistics as a rule of thumb to identify extreme outliers, as data points that are three standard deviations away from the mean are relatively rare in a normal distribution. After this, the no. of rows fed into the model went down to 13,374 after removing rows with any outliers.
+I removed outliers with the intention to reduce noise that might be misdirecting my model. I chose 3 as the threshold as all the values are scaled to be a z_score. A z-score of 3 means that the data point is three standard deviations away from the mean. This threshold is often used in statistics as a rule of thumb to identify extreme outliers, as data points that are three standard deviations away from the mean are relatively rare in a normal distribution. The no. of rows fed into the model went down to 13,374 after removing rows with any outliers.
 
 I added a hidden layer. I did this as using three hidden layers in a TensorFlow (TF) model often appears in neural network architectures because it provides a balance between model complexity and capacity.
 
@@ -138,7 +138,7 @@ Training Accuracy: 73.3%
 
 ![Alt text](image-5.png)
 
-Upon testing the model, it generated an accuracy score of 69.9%. An testing accuracy that is lower than the training accuracy indicates an over-fitting problem. 
+Upon testing the model, it generated an accuracy score of 69.9%. A testing accuracy that is lower than the training accuracy indicates an over-fitting problem. 
 
 ## Summary
 
