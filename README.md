@@ -44,7 +44,7 @@ The features for our model include:
 
 All feature columns were split into training and testing values, and then scaled based on the training data using StandardScaler.
 
-![Alt text](image.png)
+<img width="191" alt="image" src="https://github.com/gayajohn/deep-learning-challenge/assets/135036996/0570a3da-7f69-45e2-b2d9-fd2677b5ca2d">
 
 **What variable(s) should be removed from the input data because they are neither targets nor features?**
 
@@ -64,7 +64,7 @@ The initial model had:
 - Activation function was 'relu' for the hidden layers. ReLU stands for Rectified Linear Unit, and it was chosed as it is one of the most commonly used activation functions in artificial neural networks, including deep learning models. The ReLU activation function is used to introduce non-linearity into a neural network.
 - The output layer had activation function 'sigmoid'. The sigmoid function, also known as the logistic function, is a popular activation function used in machine learning and artificial neural networks. It maps any real-valued number to a value between 0 and 1. I used it as we are aiming to predict a classifier with values 1 or 0. 
 
-![Alt text](image-1.png)
+<img width="399" alt="image-1" src="https://github.com/gayajohn/deep-learning-challenge/assets/135036996/bc33d102-c8b3-4fc0-bca9-acb2f956c67e">
 
 **Were you able to achieve the target model performance?**
 
@@ -85,7 +85,7 @@ I added a hidden layer. I did this as using three hidden layers in a TensorFlow 
 
 I increased the no. of nodes and epochs in an attempt to increase complexity and no. of trials.
 
-![Alt text](image-2.png)
+<img width="398" alt="image-2" src="https://github.com/gayajohn/deep-learning-challenge/assets/135036996/7e9330db-973f-4e9a-b937-2a2638fd9015">
 
 This model had a testing accuracy of 62.5% which is worse than the initial model.
 
@@ -98,7 +98,7 @@ Attempt 2:
 
 Removing the outliers did not seem to work, so in my next attempt I increased the number of nodes in each layer and changed the activation faction to tanh. My intention for this is a trial-and-error aspect. 
 
-![Alt text](image-3.png)
+<img width="395" alt="image-3" src="https://github.com/gayajohn/deep-learning-challenge/assets/135036996/688c0224-8aeb-47ff-9b0f-ae7912461dd1">
 
 The testing accuracy of this model is slightly higher than the initial model, at 73%
 
@@ -112,7 +112,7 @@ Attempt 3:
 
 In a final attempt at improving upon the previous model, I removed the classifcation and application type columns. I used domain knowledge to make an educated assumption, that these columns do not contribute to the success of a project. I intended to quiet the noise in the model, hoping it would lend some accuracy.
 
-![Alt text](image-4.png)
+<img width="393" alt="image-4" src="https://github.com/gayajohn/deep-learning-challenge/assets/135036996/9fd1024d-0690-494d-995e-634e495d294b">
 
 The testing accuracy declined to 69.8%
 
@@ -136,7 +136,7 @@ The tuner optimized accuracy. As the tuner was running, I realized the training 
 
 Training Accuracy: 73.3%
 
-![Alt text](image-5.png)
+<img width="395" alt="image-5" src="https://github.com/gayajohn/deep-learning-challenge/assets/135036996/193c25f0-24e5-4d02-b26b-94cbd5df2d61">
 
 Upon testing the model, it generated an accuracy score of 69.9%. A testing accuracy that is lower than the training accuracy indicates an over-fitting problem. 
 
